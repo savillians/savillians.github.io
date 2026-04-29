@@ -4,10 +4,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Savillians</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #606c71;
+      background-color: #fff;
+    }
+
+    a {
+      color: #1e6bb8;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page-header {
+      color: #fff;
+      text-align: center;
+      background-color: #159957;
+      background-image: linear-gradient(120deg, #155799, #159957);
+      padding: 3rem 2rem;
+    }
+
+    .page-header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.5rem;
+      font-weight: normal;
+      color: #fff;
+    }
+
+    .page-header p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .main-content {
+      max-width: 64rem;
+      margin: 0 auto;
+      padding: 2rem 4rem;
+      word-wrap: break-word;
+    }
+
+    .main-content p {
+      margin-top: 0;
+    }
+
+    .site-footer {
+      padding: 2rem 4rem;
+      margin-top: 2rem;
+      border-top: solid 1px #eff0f1;
+      font-size: 0.9rem;
+      color: #819198;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 42em) {
+      .page-header { padding: 2rem 1rem; }
+      .page-header h1 { font-size: 1.75rem; }
+      .main-content { padding: 1.5rem; }
+      .site-footer { padding: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Savillians</h1>
-  <p>This site belongs to the Savillians organization.</p>
-  <p>For more information, visit <a href="/documentation">documentation</a>.</p>
+  <header class="page-header">
+    <h1>Savillians</h1>
+    <p>App development by Savillians</p>
+  </header>
+
+  <main class="main-content">
+    <h2>Welcome to Savillians</h2>
+    <p>This is the Savillians organization. We build apps designed to make your everyday life a little easier.</p>
+    <p>For more information, visit our <a href="/documentation">documentation</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    &copy; Savillians
+  </footer>
 </body>
 </html>
